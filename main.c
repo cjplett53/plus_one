@@ -3,29 +3,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-int x = 53;
-
-int fibonacci(int n){
-    if(n==1 || n==2)
-        return 1;
-    return fibonacci(n-1) + fibonacci(n-2);
-}
-
-int factorial(int n){
-    if(n==0)
-        return 1;
-    return n*(factorial(n-1));
-}
-
-int add(int x, int y){
-    return x+y;
-}
-
-void f(int (*add)(int, int)){
-    printf("I'm adding 1+1");
-    int ans = add(1, 1);
-    printf("The result is %d", ans);
-}
 int* plusOne(int* digits, int digitsSize, int* returnSize) {
     int carry = 0;
     for(int i=digitsSize-1; i>=0; i--){
