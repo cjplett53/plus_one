@@ -22,6 +22,9 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
     *returnSize = digitsSize+carry;
     return returnArray;
 }
+void welcome(){
+    printf("Welcome to the function: plusOne()");
+}
 int main(int argc, char *argv[]){
     printf("Welcome to plusOne!\n");
     int returnSize = 0;
@@ -40,3 +43,4 @@ int main(int argc, char *argv[]){
     }
     return 0;
 }
+
