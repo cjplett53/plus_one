@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-
 int* plusOne(int* digits, int digitsSize, int* returnSize) {
     int carry = 0;
     for(int i=digitsSize-1; i>=0; i--){
@@ -25,10 +24,8 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
 }
 int main(int argc, char *argv[]){
     printf("Welcome to plusOne!\n");
-    
     int returnSize = 0;
     int digits[100];
-    
     printf("Enter digits, press 'q' to quit: ");
     int index = 0;
     char c;
@@ -41,6 +38,5 @@ int main(int argc, char *argv[]){
     for(int i=0; i<returnSize; ++i){
         printf("%d, ", arr[i]);
     }
-    
     return 0;
 }
