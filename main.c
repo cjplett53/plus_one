@@ -24,6 +24,7 @@ int* plusOne(int* digits, int digitsSize, int* returnSize) {
 }
 int main(int argc, char *argv[]){
     int returnSize = 0;
+    printf("Welcome to plusOne!");
     int digits[] = {9, 8, 9};
     int digitsSize = sizeof(digits)/sizeof(int);
     int *arr = plusOne(digits, digitsSize, &returnSize);
@@ -31,4 +32,5 @@ int main(int argc, char *argv[]){
         printf("%d, ", arr[i]);
     }
     return 0;
+
 }
